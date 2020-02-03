@@ -32,7 +32,7 @@ end
 def find_the_cheese# code an argument here
   
   cheese_types = ["cheddar", "gouda", "camembert"]
-  .find{|i| i.odd?}
+  cheese_types.find{|i| i.odd?}
 end
 
 
