@@ -20,11 +20,10 @@ end
 
 def long_planeteer_calls(array)
   i = 0 
-   if calls > 4
+   if if  array.any? {|i| i.length > 4}
      return TRUE
    else 
      return false 
-      puts "#{i + 1}. #{array[i]}"
       i += 1 
     end 
 end
