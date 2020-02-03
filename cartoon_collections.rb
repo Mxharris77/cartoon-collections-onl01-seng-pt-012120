@@ -31,9 +31,9 @@ end
 
 def find_the_cheese(array)
   
-  array = ["cheddar", "gouda", "camembert"].each do |i|
-  matches << i if ? # add i to the matches array if it is even
-  .detect{|i| i.is_a?(String)}
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find do |type|
+    cheese_types.include?(type)
 end
 end
 
