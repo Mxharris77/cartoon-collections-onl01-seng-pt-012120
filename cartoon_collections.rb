@@ -20,7 +20,10 @@ end
 
 def long_planeteer_calls(array)
   i = 0 
-   while i < array.length
+   if calls > 4
+     return TRUE
+   else 
+     return false 
       puts "#{i + 1}. #{array[i]}"
       i += 1 
     end 
